@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Sederhana - Kontak</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Tambahan gaya khusus untuk form kontak agar rapi */
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #5a5a5a;
+      }
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+      .btn-submit {
+        background-color: #428bca;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .btn-submit:hover {
+        background-color: #3071a9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+
+      <!-- Navigasi -->
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+
+      <!-- Wrapper Utama (Berdampingan dengan Sidebar) -->
+      <section id="wrapper">
+        <!-- Kolom Kiri: Form Kontak -->
+        <section id="main">
+          <div class="row" style="padding: 20px">
+            <h2 style="margin-bottom: 20px">Hubungi Kami</h2>
+            <p style="margin-bottom: 20px; line-height: 22px">
+              Silakan isi formulir di bawah ini jika ada pertanyaan atau pesan
+              yang ingin disampaikan.
+            </p>
+
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan nama Anda..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan email Anda..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan (Message):</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tuliskan pesan Anda di sini..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Kolom Kanan: Sidebar / Widget -->
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Widget Header</h3>
+            <ul>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+            </ul>
+          </div>
+          <div class="widget-box">
+            <h3 class="title">Widget Text</h3>
+            <p>
+              Vestibulum lorem elit, iaculis in nisl volutpat, malesuada
+              tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,
+              faucibus felis.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>

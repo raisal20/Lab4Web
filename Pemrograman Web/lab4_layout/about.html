@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Sederhana - About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+
+      <!-- Navigasi -->
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html" class="active">About</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+
+      <!-- Wrapper Utama (Berdampingan dengan Sidebar) -->
+      <section id="wrapper">
+        <!-- Kolom Kiri: Konten About / Profil & Portfolio -->
+        <section id="main">
+          <div class="row" style="padding: 20px">
+            <h2 style="margin-bottom: 20px">Tentang Saya</h2>
+            <div
+              style="
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-bottom: 30px;
+              "
+            >
+              <img
+                src="Ramaaaaaaa19.png"
+                alt="Profil"
+                style="
+                  border-radius: 50%;
+                  width: 150px;
+                  height: 150px;
+                  object-fit: cover;
+                "
+              />
+              <div>
+                <p style="line-height: 25px; margin-bottom: 10px">
+                  Halo! Nama saya <strong>Raisyal Fauzi Ghazali</strong>,
+                  mahasiswa Teknik Informatika Universitas Pelita Bangsa yang
+                  sedang mempelajari Pemrograman Web. Website ini dibuat sebagai
+                  bagian dari praktikum modul CSS Lanjutan.
+                </p>
+                <p style="line-height: 25px">
+                  Fokus utama saya saat ini adalah mendalami pengembangan
+                  antarmuka web yang responsif dan terstruktur dengan baik.
+                </p>
+              </div>
+            </div>
+
+            <h3
+              style="
+                margin-bottom: 15px;
+                border-bottom: 2px solid #428bca;
+                padding-bottom: 5px;
+              "
+            >
+              Portfolio & Keahlian
+            </h3>
+            <ul style="line-height: 30px; margin-left: 20px">
+              <li>
+                <strong>HTML5 & CSS3 Layouting:</strong> Menguasai pembuatan
+                struktur web, Grid, Flexbox, dan Float layout.
+              </li>
+              <li>
+                <strong>Responsive Design:</strong> Memahami cara menyesuaikan
+                tampilan web di berbagai ukuran layar.
+              </li>
+              <li>
+                <strong>Proyek Web Sederhana:</strong> Membangun landing page,
+                halaman artikel, dan form interaktif.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Kolom Kanan: Sidebar / Widget -->
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Widget Header</h3>
+            <ul>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+            </ul>
+          </div>
+          <div class="widget-box">
+            <h3 class="title">Widget Text</h3>
+            <p>
+              Vestibulum lorem elit, iaculis in nisl volutpat, malesuada
+              tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,
+              faucibus felis.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
